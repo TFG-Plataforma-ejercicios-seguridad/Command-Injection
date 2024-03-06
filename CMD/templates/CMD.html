@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Mensaje</title>
+</head>
+<body>
+    <h1>Formulario de Mensaje</h1>
+    <p>El siguiente formulario hace uso del comando 'echo'. Pruebe a poner algún mensaje e intente encontrar la clave.</p>
+    <form method="post" action={% url "cmd" %}>
+        {% csrf_token %}
+        <input type="text" name="cmd-input">
+        <button type="submit">Enviar</button>
+    </form>
+    {% if output %}
+        <pre>{{ output }}</pre>
+    {% endif %}
+    
+</body>
+</html>

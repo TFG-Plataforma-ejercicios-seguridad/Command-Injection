@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inyección de Comandos</title>
+</head>
+<body>
+    <h1>Inyección de Comandos</h1>
+    
+    <p>La inyección de comandos es una vulnerabilidad de seguridad que ocurre cuando un atacante puede ejecutar comandos arbitrarios en un sistema o aplicación. Esto suele suceder cuando una aplicación no valida o escapa adecuadamente los datos proporcionados por el usuario.</p>
+
+    <p>Un ejemplo común de inyección de comandos es cuando un usuario malintencionado introduce datos manipulados en un formulario web o una entrada de usuario, como una URL o un campo de búsqueda, y logra ejecutar comandos en el servidor subyacente.</p>
+
+    <a href={% url "cmd" %}>Empezar Ejercicio</a>
+
+    <p>Para protegerse contra la inyección de comandos, es importante validar y sanitizar todas las entradas de usuario, utilizar listas de control de acceso adecuadas y evitar ejecutar comandos directamente con datos no confiables.</p>
+</body>
+</html>
